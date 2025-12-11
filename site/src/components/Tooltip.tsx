@@ -9,6 +9,9 @@ interface TooltipProps {
 
 export const Tooltip: React.FC<TooltipProps> = ({ children, title, desc, links = [] }) => {
   const [isVisible, setIsVisible] = useState(false);
+  const [position, setPosition] = useState<{ left?: string; right?: string; transform: string }>({
+    transform: 'translateX(-50%) translateY(-12px)',
+  });
   const triggerRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
@@ -19,12 +22,11 @@ export const Tooltip: React.FC<TooltipProps> = ({ children, title, desc, links =
       
       // Adjust position if tooltip goes off screen
       if (triggerRect.left + contentRect.width / 2 > window.innerWidth) {
-        contentRef.current.style.left = 'auto';
-        contentRef.current.style.right = '0';
-        contentRef.current.style.transform = 'translateY(-12px)';
+        setPosition({ left: undefined, right: '0', transform: 'translateY(-12px)' });
       } else if (triggerRect.left - contentRect.width / 2 < 0) {
-        contentRef.current.style.left = '0';
-        contentRef.current.style.transform = 'translateY(-12px)';
+        setPosition({ left: '0', right: undefined, transform: 'translateY(-12px)' });
+      } else {
+        setPosition({ left: undefined, right: undefined, transform: 'translateX(-50%) translateY(-12px)' });
       }
     }
   }, [isVisible]);
@@ -42,7 +44,12 @@ export const Tooltip: React.FC<TooltipProps> = ({ children, title, desc, links =
     >
       {children}
       {isVisible && (
-        <div ref={contentRef} className="tooltip-content" role="tooltip">
+        <div 
+          ref={contentRef} 
+          className="tooltip-content" 
+          role="tooltip"
+          style={position}
+        >
           <div className="tooltip-title">{title}</div>
           <div className="tooltip-desc">{desc}</div>
           {displayLinks.length > 0 && (
