@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Roadmap — DevOps Telco Cloud (Interactive)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      :root { --bg:#0b1220; --text:#e6eef6; --muted:#94a3b8; }
+      html, body { background:var(--bg); color:var(--text); font-family: Inter, Roboto, Arial, sans-serif; margin:0; }
+      .container { max-width:1200px; margin:0 auto; padding:40px; }
+      .note { color:var(--muted); margin:8px 0 16px; }
+      #canvas { width:100%; height:auto; border-radius:8px; box-shadow:0 8px 30px rgba(0,0,0,0.6); }
+      .legend { color:var(--muted); font-size:14px; margin-top:12px; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Roadmap — DevOps Telco Cloud (Interactive)</h1>
+      <p class="note">Page interactive qui génère le visuel à partir de <code>roadmap.json</code>. Les cartes sont cliquables.</p>
+      <div id="canvas"></div>
+      <p class="legend">Éditez <code>roadmap.json</code> pour modifier les cartes. Activez GitHub Pages (Settings → Pages → Branch: main, Folder: /(root)).</p>
+      <p class="legend">URL attendue: https://taoufikbo.github.io/BlogTaoufik/</p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

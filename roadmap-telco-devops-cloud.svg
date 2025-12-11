@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600" aria-labelledby="title desc" role="img">
+  <title id="title">Roadmap DevOps Telco Cloud</title>
+  <desc id="desc">Infographie style roadmap.sh reprenant les étapes Débutant → Expert pour DevOps Telco Cloud</desc>
+  <defs>
+    <style type="text/css"><![CDATA[
+      .bg { fill:#0f1724; }
+      .panel { fill:#0b1220; stroke:#111827; stroke-width:1; rx:12; }
+      .col-title { font: 700 20px 'Segoe UI', Roboto, sans-serif; fill:#ffffff; }
+      .node { rx:8; fill:#111827; stroke:#24303a; stroke-width:1; }
+      .node-text { font: 600 13px 'Segoe UI', Roboto, sans-serif; fill:#e6eef6; }
+      .cat { font: 700 16px 'Segoe UI', Roboto, sans-serif; fill:#cbd5e1; }
+      .small { font: 400 12px 'Segoe UI', Roboto, sans-serif; fill:#9aa9b8; }
+      .accent-blue { fill:#2563eb; }
+      .accent-purple { fill:#7c3aed; }
+      .accent-green { fill:#10b981; }
+      .accent-orange { fill:#f59e0b; }
+      .header { font: 800 28px 'Segoe UI', Roboto, sans-serif; fill:#ffffff; }
+      .sub { font: 500 14px 'Segoe UI', Roboto, sans-serif; fill:#94a3b8; }
+      .legend-box { rx:6; fill:#071127; stroke:#15303f; stroke-width:1; }
+    ]]></style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="100%" height="100%"/>
+
+  <!-- Title -->
+  <g transform="translate(60,40)">
+    <text class="header">Roadmap — DevOps Telco Cloud</text>
+    <text class="sub" y="36">Modèle graphique inspiré de roadmap.sh — CNF / NFV / 5G / MEC</text>
+  </g>
+
+  <!-- Four columns -->
+  <g transform="translate(60,120)">
+    <!-- Column backgrounds -->
+    <g transform="translate(0,0)">
+      <rect class="panel" x="0" y="0" width="255" height="1400"></rect>
+      <text x="18" y="28" class="col-title">Débutant</text>
+
+      <!-- Nodes -->
+      <g transform="translate(18,60)">
+        <rect class="node accent-blue" x="0" y="0" width="219" height="48"></rect>
+        <text x="12" y="30" class="node-text">Linux &amp; Shell</text>
+      </g>
+      <g transform="translate(18,130)">
+        <rect class="node accent-green" x="0" y="0" width="219" height="48"></rect>
+        <text x="12" y="30" class="node-text">Réseaux IP (TCP/UDP, VLAN)</text>
+      </g>
+      <g transform="translate(18,200)">
+        <rect class="node accent-purple" x="0" y="0" width="219" height="48"></rect>
+        <text x="12" y="30" class="node-text">Virtualisation &amp; Containers</text>
+      </g>
+      <g transform="translate(18,270)">
+        <rect class="node accent-orange" x="0" y="0" width="219" height="48"></rect>
+        <text x="12" y="30" class="node-text">Scripting (Python / Go) &amp; Git</text>
+      </g>
+      <g transform="translate(18,340)">
+        <rect class="node" x="0" y="0" width="219" height="48"></rect>
+        <text x="12" y="30" class="node-text">Exercices: VM + réseau</text>
+      </g>
+    </g>
+
+    <!-- Column 2 -->
+    <g transform="translate(305,0)">
+      <rect class="panel" x="0" y="0" width="255" height="1400"></rect>
+      <text x="18" y="28" class="col-title">Intermédiaire</text>
+
+      <g transform="translate(18,60)">
+        <rect class="node accent-blue" x="0" y="0" width="219" height="48"></rect>
+        <text x="12" y="30" class="node-text">Kubernetes — Concepts &amp; Objects</text>
+      </g>
+      <g transform="translate(18,130)">
+        <rect class="node accent-green" x="0" y="0" width="219" height="48"></rect>
+        <text x="12" y="30" class="node-text">CNI: Calico, Multus</text>
+      </g>
+      <g transform="translate(18,200)">
+        <rect class="node accent-purple" x="0" y="0" width="219" height="48"></rect>
+        <text x="12" y="30" class="node-text">Terraform &amp; IaC</text>
+      </g>
+      <g transform="translate(18,270)">
+        <rect class="node accent-orange" x="0" y="0" width="219" height="48"></rect>
+        <text x="12" y="30" class="node-text">CI: Jenkins / GitLab CI / Tekton</text>
+      </g>
+      <g transform="translate(18,340)">
+        <rect class="node" x="0" y="0" width="219" height="48"></rect>
+        <text x="12" y="30" class="node-text">CNF: Multus + SR-IOV basics</text>
+      </g>
+    </g>
+
+    <!-- Column 3 -->
+    <g transform="translate(610,0)">
+      <rect class="panel" x="0" y="0" width="255" height="1400"></rect>
+      <text x="18" y="28" class="col-title">Avancé</text>
+
+      <g transform="translate(18,60)">
+        <rect class="node accent-blue" x="0" y="0" width="219" height="48"></rect>
+        <text x="12" y="30" class="node-text">Observability: Prometheus/Grafana</text>
+      </g>
+      <g transform="translate(18,130)">
+        <rect class="node accent-green" x="0" y="0" width="219" height="48"></rect>
+        <text x="12" y="30" class="node-text">EFK + Tracing (Jaeger / OTel)</text>
+      </g>
+      <g transform="translate(18,200)">
+        <rect class="node accent-purple" x="0" y="0" width="219" height="48"></rect>
+        <text x="12" y="30" class="node-text">ONAP / OSM — MANO concepts</text>
+      </g>
+      <g transform="translate(18,270)">
+        <rect class="node accent-orange" x="0" y="0" width="219" height="48"></rect>
+        <text x="12" y="30" class="node-text">Policy-as-Code (OPA/Gatekeeper)</text>
+      </g>
+      <g transform="translate(18,340)">
+        <rect class="node" x="0" y="0" width="219" height="48"></rect>
+        <text x="12" y="30" class="node-text">SLA/KPI &amp; Service Assurance</text>
+      </g>
+    </g>
+
+    <!-- Column 4 -->
+    <g transform="translate(915,0)">
+      <rect class="panel" x="0" y="0" width="255" height="1400"></rect>
+      <text x="18" y="28" class="col-title">Expert</text>
+
+      <g transform="translate(18,60)">
+        <rect class="node accent-blue" x="0" y="0" width="219" height="48"></rect>
+        <text x="12" y="30" class="node-text">Performance: DPDK, SR-IOV, tuning</text>
+      </g>
+      <g transform="translate(18,130)">
+        <rect class="node accent-green" x="0" y="0" width="219" height="48"></rect>
+        <text x="12" y="30" class="node-text">Edge &amp; MEC — K8s distribution</text>
+      </g>
+      <g transform="translate(18,200)">
+        <rect class="node accent-purple" x="0" y="0" width="219" height="48"></rect>
+        <text x="12" y="30" class="node-text">5G Core concepts &amp; Network Slicing</text>
+      </g>
+      <g transform="translate(18,270)">
+        <rect class="node accent-orange" x="0" y="0" width="219" height="48"></rect>
+        <text x="12" y="30" class="node-text">Conception infra opérateur</text>
+      </g>
+      <g transform="translate(18,340)">
+        <rect class="node" x="0" y="0" width="219" height="48"></rect>
+        <text x="12" y="30" class="node-text">Runbooks, Capacity &amp; Incident Mgmt</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Legend / footer -->
+  <g transform="translate(60,1160)">
+    <rect class="legend-box" x="0" y="0" width="1110" height="360"></rect>
+    <text x="20" y="30" class="cat">Légende &amp; Notes</text>
+    <text x="20" y="62" class="small">Couleurs: bleu = fondamentaux infra, vert = réseau/infra, violet = orchestration, orange = processus / CI/CD</text>
+
+    <g transform="translate(20,90)">
+      <rect class="accent-blue" x="0" y="0" width="18" height="18" rx="4"></rect>
+      <text x="30" y="14" class="small">Basique infra / linux</text>
+
+      <rect class="accent-green" x="240" y="0" width="18" height="18" rx="4"></rect>
+      <text x="270" y="14" class="small">Réseau / Data plane</text>
+
+      <rect class="accent-purple" x="520" y="0" width="18" height="18" rx="4"></rect>
+      <text x="550" y="14" class="small">Orchestration &amp; CNF</text>
+
+      <rect class="accent-orange" x="820" y="0" width="18" height="18" rx="4"></rect>
+      <text x="850" y="14" class="small">Process, CI/CD, sécurité</text>
+    </g>
+
+    <text x="20" y="140" class="small">Export: ce SVG est éditable. Pour une version PNG/HD, exporter via Inkscape ou un convertisseur SVG → PNG à la résolution souhaitée.</text>
+    <text x="20" y="168" class="small">Modification: changez les labels, couleurs, positions directement dans ce fichier SVG. Je peux aussi générer des variantes (verticale, A4, haute résolution) sur demande.</text>
+
+    <text x="20" y="206" class="small">Souhaitez-vous :</text>
+    <text x="40" y="232" class="small">1) une image PNG/HD prête à l'emploi (ex: 4000×5333) ?</text>
+    <text x="40" y="256" class="small">2) une découpe en plusieurs images (par colonne) pour affichage web responsive ?</text>
+    <text x="40" y="280" class="small">3) pousser ce SVG dans un repo GitHub et créer une page visuelle automatiquement ?</text>
+  </g>
+</svg>

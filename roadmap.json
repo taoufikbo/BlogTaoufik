@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "title": "Roadmap — DevOps Telco Cloud (Deep Dive)",
+    "version": "1.0",
+    "style": {
+      "bg": "#0b1220",
+      "spine": "#1f2937",
+      "card": "#0f1724",
+      "text": "#e6eef6",
+      "muted": "#94a3b8",
+      "accents": ["#06b6d4", "#7c3aed", "#10b981", "#f59e0b"]
+    }
+  },
+  "lanes": [
+    {
+      "id": "beginner",
+      "title": "Débutant (Fondamentaux)",
+      "items": [
+        {
+          "id": "linux",
+          "title": "Linux & Shell",
+          "desc": "Administration, systemd, journald, troubleshooting",
+          "badge": "Base",
+          "accent": 0,
+          "side": "left",
+          "x": 120,
+          "y": 60,
+          "w": 360,
+          "h": 90,
+          "links": [{ "label": "Guide Linux", "url": "https://linuxjourney.com/" }]
+        },
+        {
+          "id": "network",
+          "title": "Réseaux IP",
+          "desc": "TCP/UDP, VLAN, MTU, QoS, routage",
+          "badge": "Base",
+          "accent": 1,
+          "side": "right",
+          "x": 600,
+          "y": 180,
+          "w": 360,
+          "h": 90,
+          "links": [{ "label": "TCP/IP Illustrated", "url": "https://www.principlesofnetwork.com/" }]
+        },
+        {
+          "id": "containers",
+          "title": "Containers & Virtualisation",
+          "desc": "KVM, OCI images, registries, namespaces",
+          "badge": "Base",
+          "accent": 2,
+          "side": "left",
+          "x": 120,
+          "y": 300,
+          "w": 360,
+          "h": 90,
+          "links": [{ "label": "OCI", "url": "https://opencontainers.org/" }]
+        }
+      ]
+    },
+    {
+      "id": "intermediate",
+      "title": "Intermédiaire (Orchestration & IaC)",
+      "items": [
+        {
+          "id": "k8s",
+          "title": "Kubernetes — Concepts & Objects",
+          "desc": "Pods, Deployments, StatefulSets, CNI (Calico, Multus)",
+          "badge": "K8s",
+          "accent": 1,
+          "side": "right",
+          "x": 600,
+          "y": 60,
+          "w": 420,
+          "h": 90,
+          "links": [{ "label": "Docs K8s", "url": "https://kubernetes.io/docs/" }]
+        },
+        {
+          "id": "iac",
+          "title": "Terraform & IaC",
+          "desc": "Modules, state management, providers",
+          "badge": "IaC",
+          "accent": 0,
+          "side": "left",
+          "x": 120,
+          "y": 200,
+          "w": 420,
+          "h": 90,
+          "links": [{ "label": "Terraform Docs", "url": "https://developer.hashicorp.com/terraform/docs" }]
+        },
+        {
+          "id": "gitops",
+          "title": "CI/CD & GitOps",
+          "desc": "Pipelines, ArgoCD, Tekton, image signing",
+          "badge": "CI",
+          "accent": 3,
+          "side": "right",
+          "x": 600,
+          "y": 340,
+          "w": 420,
+          "h": 90,
+          "links": [
+            { "label": "ArgoCD", "url": "https://argo-cd.readthedocs.io/" },
+            { "label": "Tekton", "url": "https://tekton.dev/docs/" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "advanced",
+      "title": "Avancé (Observabilité, Data Plane & MANO)",
+      "items": [
+        {
+          "id": "obs",
+          "title": "Observability & Assurance",
+          "desc": "Prometheus, Grafana, ELK, Jaeger, KPI/SLA, alerts",
+          "badge": "Obs",
+          "accent": 2,
+          "side": "left",
+          "x": 120,
+          "y": 60,
+          "w": 420,
+          "h": 100,
+          "links": [
+            { "label": "Prometheus", "url": "https://prometheus.io/docs/" },
+            { "label": "OpenTelemetry", "url": "https://opentelemetry.io/docs/" }
+          ]
+        },
+        {
+          "id": "mano",
+          "title": "MANO & Orchestrators",
+          "desc": "ONAP, OSM, VNF vs CNF, lifecycle",
+          "badge": "MANO",
+          "accent": 1,
+          "side": "right",
+          "x": 600,
+          "y": 200,
+          "w": 420,
+          "h": 100,
+          "links": [
+            { "label": "ONAP", "url": "https://docs.onap.org/" },
+            { "label": "OSM", "url": "https://osm.etsi.org/wikipub/" }
+          ]
+        },
+        {
+          "id": "dataplane",
+          "title": "Data Plane & Acceleration (Deep Dive)",
+          "desc": "CPU pinning, HugePages, IRQ affinity, SR-IOV, DPDK, VPP",
+          "badge": "Perf",
+          "accent": 0,
+          "side": "left",
+          "x": 120,
+          "y": 360,
+          "w": 420,
+          "h": 120,
+          "links": [
+            { "label": "DPDK", "url": "https://doc.dpdk.org/guides/" },
+            { "label": "SR-IOV", "url": "https://docs.kernel.org/PCI/pci-iov-howto.html" }
+          ]
+        },
+        {
+          "id": "overlay",
+          "title": "Tunneling & Overlay",
+          "desc": "GENEVE, VXLAN, GRE — options de connectivité CNF",
+          "badge": "Net",
+          "accent": 3,
+          "side": "right",
+          "x": 600,
+          "y": 520,
+          "w": 420,
+          "h": 100,
+          "links": [
+            { "label": "GENEVE", "url": "https://datatracker.ietf.org/doc/rfc8926/" },
+            { "label": "VXLAN", "url": "https://datatracker.ietf.org/doc/rfc7348/" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "expert",
+      "title": "Expert (Security, Cluster lifecycle, Edge & 5G)",
+      "items": [
+        {
+          "id": "security",
+          "title": "Security & Supply Chain",
+          "desc": "RBAC, NetworkPolicy, Pod hardening, image scanning, SBOM, attestation",
+          "badge": "Sec",
+          "accent": 3,
+          "side": "left",
+          "x": 120,
+          "y": 60,
+          "w": 420,
+          "h": 120,
+          "links": [
+            { "label": "K8s Security", "url": "https://kubernetes.io/docs/concepts/security/" },
+            { "label": "SLSA", "url": "https://slsa.dev/" }
+          ]
+        },
+        {
+          "id": "capi",
+          "title": "Cluster API (CAPI) & Sylva",
+          "desc": "Lifecycle: bootstrap, scaling, providers, Sylva integration",
+          "badge": "CAPI",
+          "accent": 1,
+          "side": "right",
+          "x": 600,
+          "y": 240,
+          "w": 420,
+          "h": 110,
+          "links": [
+            { "label": "Cluster API", "url": "https://cluster-api.sigs.k8s.io/" },
+            { "label": "Sylva", "url": "https://sylva-project.github.io/" }
+          ]
+        },
+        {
+          "id": "acm",
+          "title": "ACM (OpenShift) & Multi-Cluster Ops",
+          "desc": "Policies, app placement, observabilité multi-cluster",
+          "badge": "ACM",
+          "accent": 2,
+          "side": "left",
+          "x": 120,
+          "y": 420,
+          "w": 420,
+          "h": 110,
+          "links": [
+            {
+              "label": "RHACM",
+              "url": "https://access.redhat.com/documentation/en-us/red_hat_advanced_cluster_management_for_kubernetes/"
+            }
+          ]
+        },
+        {
+          "id": "edge5g",
+          "title": "5G Core & Edge Integration",
+          "desc": "UPF placement, slicing, MEC orchestration",
+          "badge": "5G",
+          "accent": 0,
+          "side": "right",
+          "x": 600,
+          "y": 600,
+          "w": 420,
+          "h": 110,
+          "links": [
+            { "label": "5GC", "url": "https://www.3gpp.org/specifications/" },
+            { "label": "MEC", "url": "https://www.etsi.org/technologies/multi-access-edge_computing" }
+          ]
+        },
+        {
+          "id": "runbooks",
+          "title": "Runbooks & Ops at scale",
+          "desc": "Playbooks, SRE, capacity planning, incident response",
+          "badge": "Ops",
+          "accent": 3,
+          "side": "left",
+          "x": 120,
+          "y": 780,
+          "w": 420,
+          "h": 90,
+          "links": [{ "label": "SRE", "url": "https://sre.google/sre-book/table-of-contents/" }]
+        }
+      ]
+    }
+  ]
+}
