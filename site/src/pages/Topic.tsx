@@ -22,8 +22,9 @@ export const Topic: React.FC = () => {
         setLoading(true);
         setError(null);
         
-        // Try to load the markdown file
-        const response = await fetch(`/docs/${slug}.md`);
+        // Try to load the markdown file - use relative path that works with base
+        const basePath = import.meta.env.BASE_URL || '/';
+        const response = await fetch(`${basePath}docs/${slug}.md`);
         if (!response.ok) {
           throw new Error('Topic not found');
         }
